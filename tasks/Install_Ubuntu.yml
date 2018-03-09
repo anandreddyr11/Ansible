@@ -1,0 +1,5 @@
+---
+ - name: Install Apache Debian Family
+   apt: name={{ App_Server_Ubuntu }} state=latest
+   when: ansible_distribution == "Ubuntu"
+

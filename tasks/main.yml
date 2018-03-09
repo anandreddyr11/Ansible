@@ -1,0 +1,15 @@
+---
+# tasks file for Apache
+
+ - include: Install_Redhat.yml
+
+ - include: Install_Ubuntu.yml
+
+ - include: Service_Redhat.yml
+   
+ - include: Service_Ubuntu.yml
+
+ - include: Copy_Redhat.yml
+
+ - include: Copy_Ubuntu.yml
+

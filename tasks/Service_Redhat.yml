@@ -1,0 +1,6 @@
+---
+
+ - name: start apache service on RedHat
+   service: name={{ App_Server }} state=started
+   when: ansible_distribution == "RedHat"
+

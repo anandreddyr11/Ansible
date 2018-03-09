@@ -1,0 +1,7 @@
+---
+ - name: Deploy the project on RedHat
+   git: repo=https://github.com/anandreddyr11/SAB.git  dest=/var/www/html update=no
+   when: ansible_distribution == "RedHat"
+   notify:
+    - Restart RedHat Apache
+

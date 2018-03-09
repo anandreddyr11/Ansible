@@ -1,0 +1,9 @@
+---
+# handlers file for Apache
+
+ - name: Restart RedHat Apache
+   service: name={{ App_Server }} state=restarted
+
+ - name: Restart Ubuntu Apache
+   service: name={{ App_Server_Ubuntu }} state=restarted
+

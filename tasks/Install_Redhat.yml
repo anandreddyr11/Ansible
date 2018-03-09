@@ -1,0 +1,5 @@
+---
+ - name: Install Apache RedHat Family
+   yum: name={{ App_Server }} state=latest
+   when: ansible_distribution == "RedHat"
+

@@ -1,0 +1,6 @@
+---
+
+ - name: start apache service on Ubuntu
+   service: name={{ App_Server_Ubuntu }} state=started
+   when: ansible_distribution == "Ubuntu"
+
