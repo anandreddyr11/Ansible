@@ -1,5 +1,0 @@
----
-# vars file for Apache
-
- App_Server: httpd
- App_Server_Ubuntu: apache2
